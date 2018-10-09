@@ -1,11 +1,13 @@
-void setup()
-{
-  size(100,100);
+void setup() {
+  size(300,300);
+  background(240,180,190);
+  
+  int tl = 10;
+  int tw = 6;
+  int th = 4;
 }
+
 void draw()
 {
-  ellipse(50,50,50,50);
+  triangle(50,50,50,50,50,50);
 }
-
-
-
