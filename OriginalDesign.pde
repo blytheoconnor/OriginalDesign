@@ -98,3 +98,84 @@ void draw() {
   e = 1;
   }
 }
+
+
+
+
+int red = 204;
+int green = 217;
+int blue = 255;
+boolean up = false;
+int x = 50;
+
+
+void setup() {
+  size(400,300);
+  background(255,255,255);
+  frameRate(80);
+}
+
+void draw() {
+  fill(red, green, blue);
+  ellipse (x, 50, 50, 50);
+  x++;
+  if (red < 255 || red > 204) {
+    up = !up;
+  }
+  if (up) {
+    red++;
+  } else {
+    red--;
+  }
+  if (green < 255 || green > 204) {
+    up = !up;
+  }
+  if (up) {
+    green++;
+  } else {
+    green--;
+  }
+  if (blue < 255 || blue > 204) {
+    up = !up;
+  }
+  if (up) {
+    blue++;
+  } else {
+    blue--;
+  }
+  //trangleForward();
+  //triangleBackward();
+  //circles();
+  //restart();
+}
+
+void fill() {
+  if (red > 255 || red < 204) {
+    up = !up;
+  }
+  if (up) {
+    red++;
+  } else {
+    red--;
+  }
+  if (green > 255 || green < 204) {
+    up = !up;
+  }
+  if (up) {
+    green++;
+  } else {
+    green--;
+  }
+  if (blue > 255 || blue < 204) {
+    up = !up;
+  }
+  if (up) {
+    blue++;
+  } else {
+    blue--;
+  }
+}
+  
+ 
+  
+  
